@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .fixed-link {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      margin: 12px;          /* 画面端からの余白 */
+      color: #fff;           /* 文字色を白に */
+      text-decoration: none; /* 下線消すなら */
+      background: rgba(0,0,0,0.3); /* 必要なら視認性のための半透明背景 */
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      z-index: 9999;
+    }
+
+    /* ホバー時の色 */
+    .fixed-link:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <a href="https://example.com" class="fixed-link" aria-label="ページ下部のリンク">リンクテキスト</a>
+</body>
+</html>
